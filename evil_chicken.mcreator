@@ -1,0 +1,164 @@
+{
+  "mod_elements": [
+    {
+      "name": "EvilChicken",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_chicken",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/evil_chicken/neoforge/biome_modifier/evil_chicken_biome_modifier.json",
+          "src/main/java/net/rollylindenshnizzer/evilchicken/client/renderer/EvilChickenRenderer.java",
+          "src/main/resources/assets/evil_chicken/models/item/evil_chicken_spawn_egg.json",
+          "src/main/java/net/rollylindenshnizzer/evilchicken/entity/EvilChickenEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "EvilChickenCreativeTab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_chicken_creative_tab",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "EvilChickenDuplicate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_chicken_duplicate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rollylindenshnizzer/evilchicken/procedures/EvilChickenDuplicateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EvilChickenLand",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_chicken_land",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/evil_chicken/worldgen/biome/evil_chicken_land.json",
+          "src/main/java/net/rollylindenshnizzer/evilchicken/world/features/treedecorators/EvilChickenLandLeaveDecorator.java",
+          "src/main/java/net/rollylindenshnizzer/evilchicken/world/features/treedecorators/EvilChickenLandFruitDecorator.java",
+          "src/main/resources/data/evil_chicken/worldgen/configured_feature/evil_chicken_land_tree.json",
+          "src/main/java/net/rollylindenshnizzer/evilchicken/world/features/treedecorators/EvilChickenLandTrunkDecorator.java",
+          "src/main/resources/data/evil_chicken/worldgen/placed_feature/evil_chicken_land_tree.json"
+        ]
+      }
+    },
+    {
+      "name": "EvilConfigFile",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_config_file",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rollylindenshnizzer/evilchicken/procedures/EvilConfigFileProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/ConfigStuff"
+    },
+    {
+      "name": "WillEvilChickenSpawn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "will_evil_chicken_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/rollylindenshnizzer/evilchicken/procedures/WillEvilChickenSpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/ConfigStuff"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "ambientchicken",
+      "files": [
+        "ambientchicken"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    }
+  ],
+  "tag_elements": {
+    "BIOMES:minecraft:has_structure/shipwreck_beached": [
+      "~CUSTOM:EvilChickenLand"
+    ],
+    "BIOMES:minecraft:has_structure/nether_fossil": [
+      "~CUSTOM:EvilChickenLand"
+    ],
+    "BIOMES:minecraft:has_structure/mineshaft": [
+      "~CUSTOM:EvilChickenLand"
+    ],
+    "BIOMES:minecraft:has_structure/ruined_portal_standard": [
+      "~CUSTOM:EvilChickenLand"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.evil_chicken.evil_chicken_spawn_egg": "Evil Chicken Spawn Egg",
+      "biome.evil_chicken.evil_chicken_land": "Evil Chicken Land",
+      "item_group.evil_chicken.evil_chicken_creative_tab": "Evil Chicken",
+      "subtitles.ambientchicken": "",
+      "entity.evil_chicken.evil_chicken": "Evil Chicken"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "ConfigStuff",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "evil_chicken",
+    "modName": "Evil Chicken",
+    "version": "1.0.0",
+    "description": "Adds a very evil chicken to Minecraft. Watch out.",
+    "author": "rollylindenshnizzer",
+    "websiteURL": "https://github.com/wall5009/evil-chicken",
+    "license": "All Rights Reserved",
+    "serverSideOnly": false,
+    "modPicture": "evilchickenmuahahahahaa",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-1.21.1",
+    "credits": "rollylindenshnizzer",
+    "modElementsPackage": "net.rollylindenshnizzer.evilchicken"
+  },
+  "mcreatorVersion": 202400452410
+}

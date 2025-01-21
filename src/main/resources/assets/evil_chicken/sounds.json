@@ -1,0 +1,10 @@
+{
+  "ambientchicken": {
+    "sounds": [
+      {
+        "name": "evil_chicken:ambientchicken",
+        "stream": false
+      }
+    ]
+  }
+}
